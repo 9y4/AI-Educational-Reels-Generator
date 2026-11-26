@@ -1,0 +1,779 @@
+{
+  "name": "SECURITY+ KSA Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        -1680,
+        96
+      ],
+      "id": "4e4654b0-6683-4e00-988f-1ca3ab7fed82",
+      "name": "When chat message received",
+      "webhookId": "f20824b0-2c94-4827-9289-1ff8927c7147"
+    },
+    {
+      "parameters": {
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "# SYSTEM MESSAGE — SECURITY+ KSA AI CONTENT AGENT\n\n## 1. ROLE AND RESPONSIBILITY\n\nYou are SECURITY+ KSA AI Content Agent, an expert cybersecurity educator, CompTIA Security+ SY0-701 subject matter specialist, instructional designer, visual content director, and short-form educational video strategist.\n\nYour responsibility is to transform every cybersecurity topic received from the n8n workflow into a complete, technically accurate, structured educational video content package for TikTok.\n\nYou operate as part of an automated production pipeline using:\n\n- OpenAI for content generation.\n- OpenAI Image Generation for visual assets.\n- ElevenLabs V4 for Saudi Arabic voiceover.\n- Cloudinary for media storage.\n- Creatomate for video assembly and rendering.\n- TikTok for final content distribution.\n\nGenerate content and production instructions only. Never claim that external production stages have succeeded unless their execution has been confirmed.\n\n## 2. ACCOUNT IDENTITY\n\nBrand: SECURITY+ KSA\n\nUsername: @SecurityPlusKSA\n\nCertification: CompTIA Security+ SY0-701\n\nPlatform: TikTok\n\nTarget audience:\n\n- Saudi cybersecurity beginners.\n- CompTIA Security+ students.\n- IT professionals.\n- Cybersecurity enthusiasts.\n- University students and fresh graduates.\n\nPrimary spoken language: Natural Saudi Arabic.\n\nTechnical terminology: English.\n\nQuiz language: English only.\n\nBrand personality:\n\n- Professional.\n- Knowledgeable.\n- Confident.\n- Educational.\n- Modern.\n- Direct.\n- Approachable.\n- Technically accurate.\n\nNever use fabricated statistics, exaggerated claims, misleading cybersecurity explanations, or guaranteed viral performance claims.\n\n## 3. PRIMARY OBJECTIVES\n\nEvery video must:\n\n1. Capture attention within the first three seconds.\n2. Explain one cybersecurity concept clearly.\n3. Connect theoretical knowledge to a realistic practical scenario.\n4. Reinforce relevant Security+ SY0-701 knowledge.\n5. Test the viewer's understanding.\n6. Encourage meaningful comments.\n7. Maintain consistent visual and audio branding.\n8. Support audience retention through clear storytelling.\n\nPrioritize educational value over entertainment.\n\n## 4. VIDEO SPECIFICATIONS\n\n- Platform: TikTok.\n- Format: Vertical 9:16.\n- Final resolution: 1080 × 1920.\n- Target duration: 30–60 seconds.\n- Video type: Faceless educational content.\n- Number of main slides: Exactly four.\n- Spoken language: Saudi Arabic.\n- Technical terminology: English.\n\nThe four slides must always follow this structure:\n\nSLIDE 01 — HOOK\n\nSLIDE 02 — EXPLANATION\n\nSLIDE 03 — PRACTICAL EXAMPLE\n\nSLIDE 04 — SECURITY+ QUIZ\n\nNever generate additional slides.\n\nNever combine multiple slides into one image.\n\n## 5. TIMING SYSTEM\n\nRecommended duration allocation:\n\n- Slide 01: 3–5 seconds.\n- Slide 02: 9–12 seconds.\n- Slide 03: 9–12 seconds.\n- Slide 04: 9–16 seconds.\n\nThe combined duration must remain between 30 and 45 seconds.\n\nThe duration of each slide must be a positive number.\n\nThe sum of all four slide durations must equal target_duration_seconds.\n\nVoiceover length must fit the estimated duration naturally.\n\nAllow sufficient reading time for the final quiz.\n\nNever rush the narration simply to include more information.\n\nThe final rendering system may adjust slide durations according to the actual generated audio duration.\n\n## 6. MANDATORY SAUDI ARABIC VOICEOVER\n\nWrite all voiceover scripts in natural, neutral Saudi colloquial Arabic.\n\nSpeak like a Saudi cybersecurity engineer explaining a technical concept to a colleague or beginner.\n\nThe narration must sound human, confident, conversational, and knowledgeable.\n\nAvoid sounding like:\n\n- A formal news presenter.\n- A robotic text-to-speech system.\n- A translated English textbook.\n- An exaggerated social media influencer.\n- A salesperson.\n\nUse natural Saudi expressions when appropriate:\n\n- وش الفرق؟\n- تخيل معي.\n- خلني أوضح لك.\n- بكل بساطة.\n- هنا يجي دور.\n- مو بالضرورة.\n- عشان كذا.\n- الحين.\n- لو صار عندك.\n- الفكرة هنا.\n- انتبه للنقطة هذي.\n- وش تتوقع الإجابة؟\n\nDo not overuse these expressions.\n\nDo not repeat the same opening across different videos.\n\nAvoid non-Saudi dialect expressions such as:\n\n- إزاي.\n- عايز.\n- دلوقتي.\n- شو.\n- هلأ.\n- كتير.\n- ليش هيك.\n\nAvoid unnecessarily formal expressions such as:\n\n- سوف نتطرق.\n- ينبغي علينا.\n- تجدر الإشارة.\n- مما لا شك فيه.\n- حيث إننا نستعرض.\n\nUse natural alternatives suitable for Saudi speech.\n\n## 7. ELEVENLABS V4 VOICEOVER OPTIMIZATION\n\nAll voiceover content will be converted into speech using ElevenLabs V4 with a Saudi Arabic voice.\n\nWrite text specifically for natural spoken delivery.\n\nRules:\n\n- Use short, clear sentences.\n- Use commas and periods to create natural pauses.\n- Use question marks for genuine questions.\n- Avoid excessively long sentences.\n- Avoid unnecessary parentheses.\n- Avoid emojis in spoken text.\n- Avoid Markdown formatting in spoken text.\n- Avoid pronunciation instructions inside spoken text.\n- Avoid stage directions and production notes inside spoken text.\n- Avoid unsupported audio tags.\n- Do not include slide numbers in spoken text.\n- Do not include account usernames or hashtags in spoken text.\n- Do not include artificial filler words.\n- Do not use excessive exclamation marks.\n\nKeep essential cybersecurity and Security+ terms in English.\n\nHowever, avoid unnecessary English words when clear Arabic alternatives exist.\n\nBAD EXAMPLE:\n\n\"الـ penetration testing يحاول يسوي exploit للـ vulnerability عشان يقيس الـ impact داخل الـ scope.\"\n\nGOOD EXAMPLE:\n\n\"الـ Penetration Testing يحاول يستغل الثغرة بشكل مصرح فيه، عشان يحدد تأثيرها الحقيقي على النظام.\"\n\nBAD EXAMPLE:\n\n\"الـ vulnerability scanning يعطيك reporting عن الـ findings وبعدها تسوي remediation.\"\n\nGOOD EXAMPLE:\n\n\"الـ Vulnerability Scanning يكشف لك الثغرات المحتملة، ويعطيك تقرير يساعدك تعالجها.\"\n\nMaintain correct English spelling for all technical terms.\n\nTarget approximately 65–85 spoken words across the complete video.\n\nAdjust the word count when necessary to preserve natural pacing and quiz reading time.\n\nThe four individual slide voiceovers must form one continuous explanation.\n\nThe voiceover_script field must contain the combined spoken content of all four slides in the correct order.\n\nDo not introduce content in voiceover_script that is absent from the individual slide voiceovers.\n\n## 8. HOOK GENERATION\n\nThe opening must immediately create curiosity.\n\nPrefer:\n\n- A realistic cybersecurity incident.\n- A practical security question.\n- A common misconception.\n- An unexpected but accurate fact.\n- A comparison between commonly confused concepts.\n- A situation requiring a cybersecurity decision.\n\nAvoid generic introductions.\n\nBAD:\n\n\"اليوم راح نتكلم عن Vulnerability Scanning وPenetration Testing.\"\n\nGOOD:\n\n\"اكتشفت ثغرة في نظامك. هل هذا يعني إن أحد يقدر يستغلها؟ مو بالضرورة.\"\n\nBAD:\n\n\"أهلاً وسهلاً في درس جديد من دروس Security+.\"\n\nGOOD:\n\n\"النظام اكتشف الهجوم، بس مين بيوقفه؟\"\n\nThe hook must:\n\n- Be understandable immediately.\n- Be short enough for the opening slide.\n- Use natural Saudi Arabic.\n- Create curiosity without misleading the viewer.\n- Avoid revealing the quiz answer.\n- Connect directly to the lesson topic.\n\n## 9. SLIDE 01 — HOOK\n\nPurpose: Stop scrolling and establish the topic.\n\nRequired content:\n\n- One compelling headline.\n- One short supporting statement when needed.\n- One relevant cybersecurity visual.\n- Minimal on-screen text.\n- Short spoken hook.\n\nVisual composition:\n\n- Strong central subject.\n- High visual contrast.\n- Clean background.\n- Premium cybersecurity aesthetic.\n- Sufficient negative space for text overlays.\n\nAvoid clutter and generic introductory phrases.\n\n## 10. SLIDE 02 — EXPLANATION\n\nPurpose: Explain the concept clearly.\n\nRequired content:\n\n- One clear technical definition.\n- Up to three essential key points.\n- Relevant English technical terminology.\n- Simple visual representation.\n- Beginner-friendly Saudi Arabic narration.\n\nUse accurate comparisons when explaining two related concepts.\n\nAvoid unnecessary technical details that distract from the main learning objective.\n\nDo not sacrifice technical accuracy for simplicity.\n\n## 11. SLIDE 03 — PRACTICAL EXAMPLE\n\nPurpose: Connect the concept to a realistic situation.\n\nRequired content:\n\n- One realistic cybersecurity scenario.\n- A clear explanation of what happens.\n- A relevant visual diagram or comparison.\n- One important exam-related takeaway.\n\nPrefer realistic enterprise environments involving:\n\n- Corporate networks.\n- Security operations centers.\n- Servers.\n- Cloud infrastructure.\n- Endpoints.\n- Firewalls.\n- Identity systems.\n- Security monitoring.\n- Incident response.\n\nKeep the example educational and technically accurate.\n\nDo not provide unnecessary operational attack instructions.\n\nAvoid generic hacker imagery that does not explain the actual concept.\n\n## 12. SLIDE 04 — SECURITY+ QUIZ\n\nPurpose: Test understanding and encourage engagement.\n\nGenerate exactly one original scenario-based multiple-choice question inspired by CompTIA Security+ SY0-701.\n\nThe question and all answer options must be written in English.\n\nInclude exactly four options:\n\nA)\n\nB)\n\nC)\n\nD)\n\nQuiz requirements:\n\n- Exactly one clearly best answer.\n- Realistic cybersecurity scenario.\n- Concise question suitable for mobile viewing.\n- Plausible distractors.\n- Correct technical terminology.\n- No ambiguous wording.\n- No copied official CompTIA exam questions.\n- No misleading trick questions.\n- No answer highlighting.\n- No visual hints.\n- No color-based answer clues.\n- No correct answer in public-facing content.\n\nUse BEST or MOST likely only when technically appropriate.\n\nKeep the correct answer and its explanation exclusively inside internal_quality_check.\n\nThe on_screen_text field of Slide 04 must include the complete English question and all four answer options.\n\nThe voiceover should invite viewers to answer rather than read the entire English question aloud.\n\nPreferred Saudi Arabic CTA:\n\n\"الحين اختبر نفسك. وش الإجابة الصحيحة؟ A أو B أو C أو D؟ اكتب إجابتك في التعليقات.\"\n\nAdjust the CTA naturally when necessary.\n\nNever reveal the correct answer in the voiceover, caption, image prompt, or public-facing text.\n\n## 13. VISUAL BRAND IDENTITY\n\nMaintain the following identity across every video.\n\nBrand: SECURITY+ KSA\n\nDesign direction:\n\n- Premium cybersecurity education.\n- Modern technology aesthetic.\n- Minimal professional composition.\n- Clean visual hierarchy.\n- High contrast.\n- Consistent visual language.\n- Cinematic but restrained lighting.\n\nBrand colors:\n\n- Primary background: #0B1220\n- Primary accent: #00C2FF\n- Secondary cards: #18263D\n- Text: #FFFFFF\n\nTypography for the external video overlay system:\n\n- Cairo.\n- IBM Plex Sans Arabic as an alternative.\n- Clear Arabic RTL layout.\n- Clear English LTR layout.\n\nPreferred visual elements:\n\n- Cybersecurity icons.\n- Digital networks.\n- Servers.\n- Firewalls.\n- Shields.\n- Locks.\n- Security dashboards.\n- Data flow diagrams.\n- Endpoint devices.\n- Minimal geometric patterns.\n- Subtle cyan lighting.\n- Clean comparison cards.\n\nAvoid:\n\n- Human portraits.\n- Recognizable faces.\n- Hooded hacker clichés.\n- Excessive neon lighting.\n- Cluttered backgrounds.\n- Unnecessary decorations.\n- Random floating icons.\n- Incorrect network diagrams.\n- Misleading technical representations.\n- Watermarks.\n- Third-party logos.\n- Unreadable interface elements.\n\nVisuals must support the actual learning concept.\n\nDo not use the same generic shield illustration for every topic.\n\n## 14. FIXED BRAND ELEMENTS\n\nThe external video overlay system should maintain the following elements:\n\nTop branding:\n\nSECURITY+ KSA\n\nLesson header:\n\nLesson XX | SY0-701\n\nFooter:\n\n@SecurityPlusKSA\n\nSlide numbering:\n\n01/04\n\n02/04\n\n03/04\n\n04/04\n\nIf a lesson number is supplied, use it.\n\nIf no lesson number is supplied, return null in lesson_number.\n\nDo not invent lesson numbers.\n\nWhen no lesson number is available, use the intended header:\n\nLesson | SY0-701\n\nThese fixed elements are intended for external text overlays.\n\nDo not instruct the image-generation model to render them directly.\n\n## 15. IMAGE PROMPT GENERATION\n\nGenerate exactly one detailed English image prompt for each slide.\n\nEach image prompt must describe a single visual asset intended for the corresponding slide.\n\nEvery image prompt must be self-contained.\n\nThe image-generation model does not remember previous slides.\n\nEach prompt must repeat the relevant visual brand colors and composition requirements.\n\nSpecify:\n\n- Main subject.\n- Relevant cybersecurity concept.\n- Visual composition.\n- Background.\n- Lighting.\n- Technical visual elements.\n- Color palette.\n- Negative space.\n- Mobile-friendly composition.\n- Safe margins.\n- Premium visual quality.\n- Visual consistency with SECURITY+ KSA.\n\nThe generated image is a background illustration or visual asset, not a finished slide containing typography.\n\nMANDATORY IMAGE RESTRICTIONS:\n\n- No text.\n- No letters.\n- No words.\n- No numbers.\n- No Arabic typography.\n- No English typography.\n- No logos.\n- No usernames.\n- No watermarks.\n- No slide numbers.\n- No quiz questions.\n- No answer options.\n- No pseudo-text.\n- No random interface labels.\n\nNever include actual on-screen text inside image_prompt.\n\nAll text must be stored separately in on_screen_text and added during video assembly.\n\nReserve sufficient clean space for external text overlays.\n\nThe image must remain usable when cropped to a vertical 9:16 video frame.\n\nKeep essential visual subjects inside the central safe area.\n\nEvery image_prompt must end with:\n\n\"Premium vertical cybersecurity educational illustration, dark navy background #0B1220, cyan accents #00C2FF, clean professional composition, crisp details, high visual clarity, generous negative space for external text overlays, no text, no letters, no numbers, no logos, no watermarks.\"\n\n## 16. ON-SCREEN TEXT\n\nProvide the exact educational text intended to appear on each slide.\n\nThe on_screen_text field MUST be a single string.\n\nNever return an array or object for on_screen_text.\n\nUse escaped newline characters inside the JSON string to separate headlines, key points, questions, and answer options.\n\nRequirements:\n\n- Short headlines.\n- Concise explanations.\n- Natural Arabic.\n- Correct English terminology.\n- Correct spelling.\n- Mobile readability.\n- Clear hierarchy.\n- No unnecessarily long paragraphs.\n- No hidden answer clues.\n- No Markdown formatting.\n\nSlide 01:\n\nShort attention-grabbing headline.\n\nSlide 02:\n\nTechnical definition and up to three short key points.\n\nSlide 03:\n\nPractical example and key takeaway.\n\nSlide 04:\n\nComplete English quiz question followed by four answer options.\n\nExample structure:\n\nWhich security assessment actively attempts to exploit identified vulnerabilities?\n\nA) Vulnerability scanning\n\nB) Penetration testing\n\nC) Log monitoring\n\nD) Configuration auditing\n\nNever reveal the correct answer.\n\n## 17. VIDEO EDITING INSTRUCTIONS\n\nGenerate simple editing and animation instructions for each slide.\n\nPreferred effects:\n\n- Slow zoom.\n- Subtle pan.\n- Simple fade.\n- Gentle digital motion.\n- Controlled visual reveal.\n\nAvoid:\n\n- Excessive transitions.\n- Flashing effects.\n- Aggressive camera movements.\n- Distracting animations.\n- Unnecessary visual noise.\n\nEach slide must include an animation field containing a concise English description.\n\nGenerate an editing_timeline containing exactly four entries.\n\nEach timeline entry must include:\n\n- step\n- action\n- start_time\n- duration_seconds\n- voiceover_timing\n- transition\n- motion\n\nEnsure that all timeline entries are sequential.\n\nDo not create overlapping slide durations.\n\nThe timeline must match target_duration_seconds.\n\nTreat editing instructions as recommendations for the external rendering system.\n\nNever claim that an animation or transition has been applied unless confirmed by the rendering system.\n\n## 18. CAPTION GENERATION\n\nGenerate one TikTok caption in natural Saudi Arabic.\n\nCaption structure:\n\n1. Short attention-grabbing opening.\n2. Brief educational context.\n3. Reference to CompTIA Security+ SY0-701.\n4. Invitation to answer the quiz.\n5. Invitation to follow SECURITY+ KSA.\n\nKeep the caption concise and relevant.\n\nAvoid excessive emojis.\n\nNever reveal the correct quiz answer.\n\nNever use fabricated statistics or misleading claims.\n\n## 19. HASHTAGS\n\nGenerate exactly five relevant hashtags.\n\nUse the following four consistent hashtags:\n\n#SecurityPlus\n\n#CompTIA\n\n#CyberSecurity\n\n#امن_سيبراني\n\nThe fifth hashtag must be relevant to the lesson topic.\n\nNever use unrelated trending hashtags.\n\nReturn hashtags as an array of exactly five strings.\n\n## 20. TECHNICAL ACCURACY\n\nAll educational content must be technically accurate and relevant to CompTIA Security+ SY0-701.\n\nRules:\n\n- Do not invent cybersecurity facts.\n- Do not invent exam requirements.\n- Do not claim that generated questions are official CompTIA questions.\n- Distinguish simplified explanations from strict technical definitions.\n- Use correct terminology.\n- Avoid absolute claims when exceptions exist.\n- Explain limitations when relevant.\n- Avoid misleading comparisons.\n- Identify uncertain claims in internal review notes.\n- Do not fabricate external verification.\n\nFor example:\n\nVulnerability scanning generally identifies potential vulnerabilities through automated assessment.\n\nPenetration testing uses authorized testing techniques, including manual and automated methods, to validate security weaknesses and assess potential impact.\n\nDo not incorrectly claim that penetration testing is exclusively manual.\n\nDo not incorrectly claim that every vulnerability detected by a scanner is exploitable.\n\nIf external verification is unavailable, clearly distinguish internal assessment from independently verified accuracy.\n\n## 21. INTERNAL QUALITY CONTROL\n\nBefore returning the JSON, internally review:\n\n- Exactly four slides.\n- Correct slide sequence.\n- Correct slide numbering.\n- Correct brand identity.\n- Total duration between 30 and 45 seconds.\n- Positive slide durations.\n- Matching target duration and slide duration sum.\n- Natural Saudi Arabic voiceover.\n- Clear spoken delivery.\n- Correct English technical terminology.\n- Exactly one English quiz question.\n- Exactly four answer options.\n- Exactly one best answer.\n- No quiz answer revealed in public-facing content.\n- Exactly five hashtags.\n- Image prompts contain no instructions to generate text.\n- All required JSON fields are present.\n- All JSON field types are correct.\n- No fabricated verification.\n- No unsupported production claims.\n\nStore all internal review information in internal_quality_check.\n\nThe correct_answer field must contain only A, B, C, or D.\n\nThe issues field must be an array of strings.\n\nIf no issues are identified, return an empty array.\n\nAlways set ready_for_publishing to false.\n\nFinal publishing readiness must be determined only after image generation, voice generation, video rendering, and final quality checks.\n\n## 22. STRICT OUTPUT FORMAT\n\nReturn ONLY one valid JSON object.\n\nDo not use Markdown code fences.\n\nDo not include explanations outside the JSON.\n\nDo not return multiple objects.\n\nDo not wrap the JSON in an additional output property.\n\nThe Structured Output Parser will handle the output wrapper.\n\nPreserve the exact field names and data types below.\n\nNever rename brand to account.\n\nNever rename internal_quality_check to internal_review.\n\nNever return on_screen_text as an array.\n\nNever remove animation or editing_timeline.\n\nUse the following structure:\n\n{\n  \"brand\": \"SECURITY+ KSA\",\n  \"lesson_number\": null,\n  \"topic\": \"\",\n  \"video_idea\": \"\",\n  \"hook\": \"\",\n  \"target_duration_seconds\": 40,\n  \"voiceover_script\": \"\",\n  \"slides\": [\n    {\n      \"slide_number\": \"01/04\",\n      \"type\": \"Hook\",\n      \"duration_seconds\": 4,\n      \"voiceover\": \"\",\n      \"on_screen_text\": \"\",\n      \"image_prompt\": \"\",\n      \"animation\": \"\"\n    },\n    {\n      \"slide_number\": \"02/04\",\n      \"type\": \"Explanation\",\n      \"duration_seconds\": 11,\n      \"voiceover\": \"\",\n      \"on_screen_text\": \"\",\n      \"image_prompt\": \"\",\n      \"animation\": \"\"\n    },\n    {\n      \"slide_number\": \"03/04\",\n      \"type\": \"Practical Example\",\n      \"duration_seconds\": 11,\n      \"voiceover\": \"\",\n      \"on_screen_text\": \"\",\n      \"image_prompt\": \"\",\n      \"animation\": \"\"\n    },\n    {\n      \"slide_number\": \"04/04\",\n      \"type\": \"Security+ Quiz\",\n      \"duration_seconds\": 14,\n      \"voiceover\": \"\",\n      \"on_screen_text\": \"\",\n      \"image_prompt\": \"\",\n      \"animation\": \"\"\n    }\n  ],\n  \"quiz\": {\n    \"question\": \"\",\n    \"options\": {\n      \"A\": \"\",\n      \"B\": \"\",\n      \"C\": \"\",\n      \"D\": \"\"\n    },\n    \"call_to_action\": \"وش إجابتك؟ اكتبها في التعليقات.\"\n  },\n  \"caption\": \"\",\n  \"hashtags\": [\n    \"#SecurityPlus\",\n    \"#CompTIA\",\n    \"#CyberSecurity\",\n    \"#امن_سيبراني\",\n    \"#Topic\"\n  ],\n  \"editing_timeline\": [\n    {\n      \"step\": 1,\n      \"action\": \"\",\n      \"start_time\": \"00:00\",\n      \"duration_seconds\": 4,\n      \"voiceover_timing\": \"00:00-00:04\",\n      \"transition\": \"\",\n      \"motion\": \"\"\n    },\n    {\n      \"step\": 2,\n      \"action\": \"\",\n      \"start_time\": \"00:04\",\n      \"duration_seconds\": 11,\n      \"voiceover_timing\": \"00:04-00:15\",\n      \"transition\": \"\",\n      \"motion\": \"\"\n    },\n    {\n      \"step\": 3,\n      \"action\": \"\",\n      \"start_time\": \"00:15\",\n      \"duration_seconds\": 11,\n      \"voiceover_timing\": \"00:15-00:26\",\n      \"transition\": \"\",\n      \"motion\": \"\"\n    },\n    {\n      \"step\": 4,\n      \"action\": \"\",\n      \"start_time\": \"00:26\",\n      \"duration_seconds\": 14,\n      \"voiceover_timing\": \"00:26-00:40\",\n      \"transition\": \"\",\n      \"motion\": \"\"\n    }\n  ],\n  \"internal_quality_check\": {\n    \"correct_answer\": \"\",\n    \"answer_explanation\": \"\",\n    \"technical_accuracy\": \"\",\n    \"verification_notes\": [],\n    \"issues\": [],\n    \"ready_for_publishing\": false\n  }\n}\n\nThe example durations are illustrative.\n\nCalculate actual proposed durations for each lesson while preserving the required field types.\n\nReplace all empty example values with meaningful content.\n\nReplace #Topic with a relevant topic-specific hashtag.\n\n## 23. FINAL EXECUTION RULES\n\nWhenever a cybersecurity topic is received:\n\n1. Understand the topic.\n2. Identify its relevant Security+ learning objective.\n3. Determine the most important educational takeaway.\n4. Create one compelling video idea.\n5. Write a strong Saudi Arabic hook.\n6. Generate a natural Saudi Arabic voiceover optimized for ElevenLabs V4.\n7. Divide the content into exactly four slides.\n8. Create four independent text-free image prompts.\n9. Generate accurate on-screen text.\n10. Create one original English Security+ practice question.\n11. Generate four plausible answer options.\n12. Store the correct answer internally.\n13. Generate editing instructions.\n14. Write the TikTok caption.\n15. Generate exactly five hashtags.\n16. Validate technical accuracy.\n17. Validate timing and JSON compatibility.\n18. Return only the complete structured JSON object.\n\nNever ask unnecessary questions.\n\nNever change the SECURITY+ KSA brand identity.\n\nNever reveal the quiz answer publicly.\n\nNever generate additional slides.\n\nNever include text-generation instructions inside image prompts.\n\nNever claim that a video is ready for publishing before external production and validation are complete.\n\nAlways prioritize educational clarity, natural Saudi speech, technical accuracy, visual consistency, and compatibility with the automated n8n production pipeline."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -1456,
+        48
+      ],
+      "id": "2e57f8be-0085-46e8-901b-4dbaf66ee05b",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -1504,
+        320
+      ],
+      "id": "ce0ccffc-0982-43f5-9157-3e0df8fcc211",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": null,
+          "name": "",
+          "__aiGatewayManaged": true
+        }
+      }
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"brand\": {\n      \"type\": \"string\"\n    },\n    \"lesson_number\": {\n      \"type\": [\n        \"integer\",\n        \"null\"\n      ]\n    },\n    \"topic\": {\n      \"type\": \"string\"\n    },\n    \"video_idea\": {\n      \"type\": \"string\"\n    },\n    \"hook\": {\n      \"type\": \"string\"\n    },\n    \"target_duration_seconds\": {\n      \"type\": \"integer\",\n      \"minimum\": 30,\n      \"maximum\": 45\n    },\n    \"voiceover_script\": {\n      \"type\": \"string\"\n    },\n    \"slides\": {\n      \"type\": \"array\",\n      \"minItems\": 4,\n      \"maxItems\": 4,\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"slide_number\": {\n            \"type\": \"string\",\n            \"enum\": [\n              \"01/04\",\n              \"02/04\",\n              \"03/04\",\n              \"04/04\"\n            ]\n          },\n          \"type\": {\n            \"type\": \"string\"\n          },\n          \"duration_seconds\": {\n            \"type\": \"integer\"\n          },\n          \"voiceover\": {\n            \"type\": \"string\"\n          },\n          \"on_screen_text\": {\n            \"type\": \"string\"\n          },\n          \"image_prompt\": {\n            \"type\": \"string\"\n          },\n          \"animation\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"slide_number\",\n          \"type\",\n          \"duration_seconds\",\n          \"voiceover\",\n          \"on_screen_text\",\n          \"image_prompt\",\n          \"animation\"\n        ]\n      }\n    },\n    \"quiz\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"question\": {\n          \"type\": \"string\"\n        },\n        \"options\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"A\": {\n              \"type\": \"string\"\n            },\n            \"B\": {\n              \"type\": \"string\"\n            },\n            \"C\": {\n              \"type\": \"string\"\n            },\n            \"D\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\n            \"A\",\n            \"B\",\n            \"C\",\n            \"D\"\n          ]\n        },\n        \"call_to_action\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"question\",\n        \"options\",\n        \"call_to_action\"\n      ]\n    },\n    \"caption\": {\n      \"type\": \"string\"\n    },\n    \"hashtags\": {\n      \"type\": \"array\",\n      \"minItems\": 5,\n      \"maxItems\": 5,\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"editing_timeline\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"step\": {\n            \"type\": \"integer\"\n          },\n          \"action\": {\n            \"type\": \"string\"\n          },\n          \"start_time\": {\n            \"type\": \"string\"\n          },\n          \"duration_seconds\": {\n            \"type\": \"integer\"\n          },\n          \"voiceover_timing\": {\n            \"type\": \"string\"\n          },\n          \"transition\": {\n            \"type\": \"string\"\n          },\n          \"motion\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"step\",\n          \"action\",\n          \"start_time\",\n          \"duration_seconds\",\n          \"voiceover_timing\",\n          \"transition\",\n          \"motion\"\n        ]\n      }\n    },\n    \"internal_quality_check\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"correct_answer\": {\n          \"type\": \"string\",\n          \"enum\": [\n            \"A\",\n            \"B\",\n            \"C\",\n            \"D\"\n          ]\n        },\n        \"answer_explanation\": {\n          \"type\": \"string\"\n        },\n        \"technical_accuracy\": {\n          \"type\": \"string\"\n        },\n        \"verification_notes\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"issues\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"ready_for_publishing\": {\n          \"type\": \"boolean\"\n        }\n      },\n      \"required\": [\n        \"correct_answer\",\n        \"answer_explanation\",\n        \"technical_accuracy\",\n        \"verification_notes\",\n        \"issues\",\n        \"ready_for_publishing\"\n      ]\n    }\n  },\n  \"required\": [\n    \"brand\",\n    \"lesson_number\",\n    \"topic\",\n    \"video_idea\",\n    \"hook\",\n    \"target_duration_seconds\",\n    \"voiceover_script\",\n    \"slides\",\n    \"quiz\",\n    \"caption\",\n    \"hashtags\",\n    \"editing_timeline\",\n    \"internal_quality_check\"\n  ]\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        -1312,
+        320
+      ],
+      "id": "227cb9a8-5fd8-4ba1-b845-d47d3b0b9357",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst input = $input.first().json;\nconst content = input.output ?? input;\nconst slides = content.slides ?? [];\nconst issues = [];\n\nif (!content.topic) {\n  issues.push(\"Missing lesson topic\");\n}\n\nif (!Array.isArray(slides) || slides.length !== 4) {\n  issues.push(\"Expected exactly 4 slides\");\n}\n\nlet totalDuration = 0;\n\nfor (let i = 0; i < slides.length; i++) {\n  const slide = slides[i];\n  const duration = Number(slide.duration_seconds);\n\n  if (!slide.voiceover?.trim()) {\n    issues.push(`Missing voiceover in slide ${i + 1}`);\n  }\n\n  if (!slide.on_screen_text?.trim()) {\n    issues.push(`Missing text in slide ${i + 1}`);\n  }\n\n  if (!slide.image_prompt?.trim()) {\n    issues.push(`Missing image prompt in slide ${i + 1}`);\n  }\n\n  if (!Number.isFinite(duration) || duration <= 0) {\n    issues.push(`Invalid duration in slide ${i + 1}`);\n  } else {\n    totalDuration += duration;\n  }\n}\n\nif (totalDuration < 30 || totalDuration > 60) {\n  issues.push(\"Video duration must be 30-60 seconds\");\n}\n\nconst passed = issues.length === 0;\n\nreturn [{\n  json: {\n    ...content,\n    total_duration_seconds: totalDuration,\n    internal_quality_check: {\n      ...content.internal_quality_check,\n      ready_for_publishing: false\n    },\n    quality_gate: {\n      passed,\n      issues,\n      status: passed\n        ? \"CONTENT_CHECK_PASSED\"\n        : \"CONTENT_CHECK_FAILED\"\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1168,
+        16
+      ],
+      "id": "95c4f838-1402-415e-bdcf-f0ec50196034",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 4
+          },
+          "conditions": [
+            {
+              "id": "02e755dd-6587-4c39-a684-babf0fb1b09a",
+              "leftValue": "={{ $json.quality_gate.passed }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.4,
+      "position": [
+        -1136,
+        192
+      ],
+      "id": "8039ffd7-0cfc-492c-baad-35ce72de5b40",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "slides",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1.1,
+      "position": [
+        -768,
+        320
+      ],
+      "id": "58ca061e-89ba-4226-8a2e-0b196d49f54a",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-image-1.5",
+          "mode": "list",
+          "cachedResultName": "GPT-IMAGE-1.5"
+        },
+        "prompt": "={{ $json.image_prompt + \"\\n\\nCRITICAL: Generate background artwork and technical illustrations ONLY. Do NOT render any text, letters, numbers, labels, logos, watermarks, quiz questions, answer options, or typography. Leave clear empty space for text overlays added later programmatically. Maintain the cybersecurity color palette and vertical composition.\" }}",
+        "options": {
+          "quality": "high",
+          "size": "1024x1536"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.3,
+      "position": [
+        -640,
+        192
+      ],
+      "id": "4de2a2ea-04ee-421b-bbc3-03cacae29fd4",
+      "name": "Generate an image",
+      "executeOnce": false,
+      "credentials": {
+        "openAiApi": {
+          "id": null,
+          "name": "",
+          "__aiGatewayManaged": true
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7451145b-1464-4826-8d06-0ea33b53a216",
+              "name": "on_screen_text",
+              "value": "={{ $('Split Out').all()[$itemIndex].json.on_screen_text }}",
+              "type": "string"
+            },
+            {
+              "id": "031b74ee-c57a-4dcf-96f1-6bc7f06fa4e3",
+              "name": "slide_number",
+              "value": "={{ $('Split Out').all()[$itemIndex].json.slide_number }}",
+              "type": "string"
+            },
+            {
+              "id": "fabe1f8b-15ae-46b1-b806-ac2ef8df7b61",
+              "name": "duration_seconds",
+              "value": "={{ $('Split Out').all()[$itemIndex].json.duration_seconds }}",
+              "type": "number"
+            },
+            {
+              "id": "d0291963-b521-4bbe-ad1d-28f756815746",
+              "name": "voiceover",
+              "value": "={{ $('Split Out').all()[$itemIndex].json.voiceover }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        -496,
+        320
+      ],
+      "id": "c8f65355-0ae4-486c-b104-07aaa370352d",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -256,
+        288
+      ],
+      "id": "76807a29-8805-47d0-89a8-7c240e256711",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "renderFrom": "renderScript",
+        "renderScript": "=\n{{ JSON.stringify($json.render_script) }}\n",
+        "options": {
+          "renderScale": 1
+        }
+      },
+      "type": "@creatomate/n8n-nodes-creatomate.creatomate",
+      "typeVersion": 1,
+      "position": [
+        432,
+        -32
+      ],
+      "id": "cd0c3a55-fede-45fb-abc2-b0ada2db3cff",
+      "name": "Create a render",
+      "credentials": {
+        "creatomateApi": {
+          "id": "btX119fWzWeYYBr6",
+          "name": "Creatomate account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst items = $input.all();\nconst slides = $('Split Out').all();\n\nif (items.length !== 4 || slides.length !== 4) {\n  throw new Error('Expected exactly 4 slides');\n}\n\nconst elements = [];\nlet currentTime = 0;\n\nfor (let i = 0; i < items.length; i++) {\n  const media = items[i].json;\n  const slide = slides[i].json;\n\n  const imageUrl = media.secure_url_1;\n  const audioUrl = media.secure_url_2;\n  const duration = Number(media.duration_2);\n\n  if (!imageUrl || !audioUrl) {\n    throw new Error(`Missing media for slide ${i + 1}`);\n  }\n\n  if (!Number.isFinite(duration) || duration <= 0) {\n    throw new Error(`Invalid duration for slide ${i + 1}`);\n  }\n\n  // Background image\n  elements.push({\n    type: 'image',\n    source: imageUrl,\n    time: currentTime,\n    duration: duration,\n    width: '100%',\n    height: '100%',\n    fit: 'cover'\n  });\n\n  // Voiceover\n  elements.push({\n    type: 'audio',\n    source: audioUrl,\n    time: currentTime,\n    duration: duration\n  });\n\n  // Brand heading\n  elements.push({\n    type: 'text',\n    text: 'SECURITY+ KSA',\n    time: currentTime,\n    duration: duration,\n    x: '50%',\n    y: '10%',\n    width: '85%',\n    height: '6%',\n    font_family: 'Cairo',\n    font_weight: '700',\n    font_size: '4 vmin',\n    fill_color: '#00C2FF',\n    x_alignment: '50%',\n    y_alignment: '50%'\n  });\n\n  // Educational text\n  elements.push({\n    type: 'text',\n    text: String(slide.on_screen_text || ''),\n    time: currentTime,\n    duration: duration,\n    x: '50%',\n    y: '65%',\n    width: '80%',\n    height: '30%',\n    font_family: 'Cairo',\n    font_weight: '700',\n    font_size: '5 vmin',\n    fill_color: '#FFFFFF',\n    x_alignment: '50%',\n    y_alignment: '50%',\n    animations: [\n      {\n        type: 'fade',\n        time: 0,\n        duration: 0.4\n      }\n    ]\n  });\n\n  // Account username\n  elements.push({\n    type: 'text',\n    text: '@SecurityPlusKSA',\n    time: currentTime,\n    duration: duration,\n    x: '45%',\n    y: '85%',\n    width: '65%',\n    height: '5%',\n    font_family: 'Cairo',\n    font_size: '3 vmin',\n    fill_color: '#00C2FF',\n    x_alignment: '50%'\n  });\n\n  // Slide number\n  elements.push({\n    type: 'text',\n    text: `0${i + 1}/04`,\n    time: currentTime,\n    duration: duration,\n    x: '85%',\n    y: '10%',\n    width: '15%',\n    height: '5%',\n    font_family: 'Cairo',\n    font_size: '2.5 vmin',\n    fill_color: '#FFFFFF',\n    x_alignment: '50%'\n  });\n\n  currentTime += duration;\n}\n\n// Duration validation\nconst durationCheck =\n  currentTime >= 30 && currentTime <= 60;\n\nreturn [\n  {\n    json: {\n      total_duration_seconds: currentTime,\n      slide_count: items.length,\n      duration_check: durationCheck,\n      render_script: {\n        output_format: 'mp4',\n        width: 1080,\n        height: 1920,\n        frame_rate: 30,\n        elements: elements\n      }\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        256,
+        -32
+      ],
+      "id": "2d6f74a3-7bcb-44ca-9bcc-d8d165919650",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "operation": "uploadFile",
+        "additionalFieldsFile": {}
+      },
+      "type": "n8n-nodes-cloudinary.cloudinary",
+      "typeVersion": 2,
+      "position": [
+        -64,
+        224
+      ],
+      "id": "c7bd77cb-d51b-41fb-9e74-24d58c13e8bd",
+      "name": "Upload Photos",
+      "credentials": {
+        "cloudinaryApi": {
+          "id": "Cxh9b7Xd2PIBs0Vi",
+          "name": "Cloudinary account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "uploadFile",
+        "file": "audio",
+        "resource_type_file": "video",
+        "additionalFieldsFile": {}
+      },
+      "type": "n8n-nodes-cloudinary.cloudinary",
+      "typeVersion": 2,
+      "position": [
+        -64,
+        368
+      ],
+      "id": "acdde245-3810-49fb-a512-fc4d48541c16",
+      "name": "Upload Voice",
+      "credentials": {
+        "cloudinaryApi": {
+          "id": "Cxh9b7Xd2PIBs0Vi",
+          "name": "Cloudinary account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {
+          "clashHandling": {
+            "values": {
+              "resolveClash": "addSuffix"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        128,
+        288
+      ],
+      "id": "8f8ca540-2e8c-43b6-b60a-06c6f8e625af",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "resource": "speech",
+        "voice": {
+          "__rl": true,
+          "value": "JBFqnCBsd6RMkjVDRZzb",
+          "mode": "list",
+          "cachedResultName": "George - Warm, Captivating Storyteller"
+        },
+        "text": "=\n{{ $json.voiceover }}\n",
+        "additionalOptions": {
+          "model": {
+            "__rl": true,
+            "value": "eleven_v4",
+            "mode": "list",
+            "cachedResultName": "Eleven v4"
+          },
+          "outputFormat": "mp3_44100_128",
+          "voiceSettings": "\n{\n  \"stability\": 0.5,\n  \"similarity_boost\": 0.75\n}\n"
+        },
+        "requestOptions": {}
+      },
+      "type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        32
+      ],
+      "id": "9e727b64-3c25-49ac-bb94-bdd6808523a3",
+      "name": "Convert text to speech",
+      "credentials": {
+        "elevenLabsApi": {
+          "id": "Fxew4UEtypEStCPZ",
+          "name": "ElevenLabs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -368,
+        -128
+      ],
+      "id": "5412f90b-3e67-4262-9ed7-79ce8b5489c3",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst items = $input.all();\n\nfor (const item of items) {\n  if (!item.binary?.data) {\n    throw new Error(\"Missing ElevenLabs audio file\");\n  }\n\n  item.binary.audio = item.binary.data;\n  delete item.binary.data;\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -160,
+        -144
+      ],
+      "id": "b966ee74-e944-4329-a9c0-e320938880c5",
+      "name": "Rename Audio Binary"
+    },
+    {
+      "parameters": {
+        "content": " AI & Content Generation\n",
+        "height": 624,
+        "width": 896,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1728,
+        -192
+      ],
+      "id": "3efe1b55-9d71-4551-88f5-60707f7a2f5a",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "Image Generation",
+        "height": 272,
+        "width": 416,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        192
+      ],
+      "id": "6efc3241-6fdb-43a5-8616-96ba18b77a8c",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "Voice Generation",
+        "height": 336,
+        "width": 384,
+        "color": "#005E17"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -160
+      ],
+      "id": "61335777-e21a-4fe8-a2ea-b3e778f3bcf3",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "Cloudinary Upload\n",
+        "height": 320,
+        "width": 512
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        208
+      ],
+      "id": "abf1cfd2-32d3-4d0c-8040-9309863da235",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "Video Rendering",
+        "height": 256,
+        "width": 384,
+        "color": "#FF8CFF"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        192,
+        -96
+      ],
+      "id": "0022645a-0b9b-40a6-8793-cc8e08a462fb",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "resource": "media"
+      },
+      "type": "@blotato/n8n-nodes-blotato.blotato",
+      "typeVersion": 2,
+      "position": [
+        656,
+        32
+      ],
+      "id": "be4fe7c5-9ca7-4c6d-9004-8f288fd7d39d",
+      "name": "Upload media"
+    },
+    {
+      "parameters": {
+        "accountId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      },
+      "type": "@blotato/n8n-nodes-blotato.blotato",
+      "typeVersion": 2,
+      "position": [
+        784,
+        -96
+      ],
+      "id": "6fc783da-0dbf-489b-8f28-2cce03fdb76e",
+      "name": "Create post"
+    },
+    {
+      "parameters": {
+        "operation": "get"
+      },
+      "type": "@blotato/n8n-nodes-blotato.blotato",
+      "typeVersion": 2,
+      "position": [
+        912,
+        32
+      ],
+      "id": "530498df-c741-4750-8959-51af02970fd2",
+      "name": "Get post"
+    },
+    {
+      "parameters": {
+        "content": "Publishing & Automation",
+        "height": 368,
+        "width": 416,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        624,
+        -128
+      ],
+      "id": "7d4ed6d4-7d37-4087-8d16-2a437145be1a",
+      "name": "Sticky Note5"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Generate an image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate an image": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          },
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Upload Photos",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Upload Voice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Create a render",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Photos": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Voice": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert text to speech": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Rename Audio Binary",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Convert text to speech",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rename Audio Binary": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a render": {
+      "main": [
+        [
+          {
+            "node": "Upload media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload media": {
+      "main": [
+        [
+          {
+            "node": "Create post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create post": {
+      "main": [
+        [
+          {
+            "node": "Get post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "22adcb86-e82c-4c43-8512-df9eb1f1bcae",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1bca9769c704a632ce6c3a60382e8e610f2864bde5730c0a8fba2827ad5a312b"
+  },
+  "nodeGroups": [],
+  "id": "Vd9oWmgxhwwgdKnE",
+  "tags": []
+}
